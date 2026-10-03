@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <meta name="description" content="TrayPilot is a Windows 11 system tray dashboard for monitor brightness, audio devices, live network activity, and quick settings. Local-first, no account required.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://nikatsam.github.io/WIN_APP_TrayPilot_Website/">
+  <link rel="icon" href="assets/store-logo.png" type="image/png">
+  <link rel="preconnect" href="https://apps.microsoft.com">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TrayPilot">
+  <meta property="og:title" content="TrayPilot | Your Windows controls, right at home">
+  <meta property="og:description" content="A focused Windows 11 tray dashboard for displays, audio, network activity, and everyday system controls.">
+  <meta property="og:url" content="https://nikatsam.github.io/WIN_APP_TrayPilot_Website/">
+  <meta property="og:image" content="https://nikatsam.github.io/WIN_APP_TrayPilot_Website/assets/screenshot-dashboard.png">
+  <meta property="og:image:alt" content="TrayPilot's compact Windows system tray dashboard showing display, audio, network and quick controls">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TrayPilot | Your Windows controls, right at home">
+  <meta name="twitter:description" content="A focused Windows 11 tray dashboard for displays, audio, network activity, and everyday system controls.">
+  <meta name="twitter:image" content="https://nikatsam.github.io/WIN_APP_TrayPilot_Website/assets/screenshot-dashboard.png">
+  <title>TrayPilot | Windows 11 Controls in Your System Tray</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TrayPilot",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 11",
+    "description": "A Windows 11 system tray dashboard for supported monitor brightness, audio device switching, live network adapter activity, and quick system settings.",
+    "image": "https://nikatsam.github.io/WIN_APP_TrayPilot_Website/assets/screenshot-dashboard.png",
+    "downloadUrl": "https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&gl=US",
+    "installUrl": "https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&gl=US",
+    "softwareRequirements": "Windows 11, version 22H2 (build 22621) or later",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TrayPilot"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is TrayPilot for Windows?",
+        "acceptedAnswer": {"@type": "Answer", "text": "TrayPilot is a Windows 11 system tray dashboard that brings supported monitor brightness controls, audio device switching and mute controls, live network adapter throughput, and selected Windows quick settings into one compact flyout."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does TrayPilot work on Windows 10?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. TrayPilot targets Windows 11 version 22H2 (build 22621) or later."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does TrayPilot collect data or need an account?",
+        "acceptedAnswer": {"@type": "Answer", "text": "TrayPilot requires no account and has no telemetry or cloud service. Its controls read local Windows, display, audio endpoint, and network adapter information; settings and diagnostic logs stay on the device."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can TrayPilot control any monitor's brightness?",
+        "acceptedAnswer": {"@type": "Answer", "text": "External monitor brightness depends on DDC/CI support across the monitor, connection, adapter, and graphics driver. Some supported laptop panels can use a Windows brightness fallback. Hardware support varies."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does TrayPilot inspect my internet traffic?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. TrayPilot reads local network adapter byte counters to estimate aggregate download and upload throughput. It does not inspect packet contents."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can it route audio per app or switch HDR?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Per-application audio routing and changing HDR state are not included. TrayPilot can switch audio endpoints, control speaker and microphone mute, and display HDR capability and state as read-only information."}
+      }
+    ]
+  }
+  </script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="TrayPilot home">
+      <img src="assets/store-logo.png" width="40" height="40" alt="">
+      <span>TrayPilot</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <a class="button button-small button-outline" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Microsoft Store <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A calmer way to steer Windows</p>
+        <h1 id="hero-title">Your everyday controls.<br><span>Right at home.</span></h1>
+        <p class="hero-lede">Displays, audio, network activity, and quick settings. One considered little dashboard, ready from your system tray.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Explore TrayPilot in Store <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#features">Take a closer look <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="hero-facts" aria-label="TrayPilot highlights">
+          <li><span aria-hidden="true">◉</span> Made for Windows 11</li>
+          <li><span aria-hidden="true">⌂</span> Works on your device</li>
+          <li><span aria-hidden="true">↗</span> No account needed</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="art-note note-top"><span class="note-icon">◉</span><span><b>At a glance</b><small>The things you reach for</small></span></div>
+        <figure class="hero-shot">
+          <img src="assets/screenshot-dashboard.png" width="374" height="435" alt="TrayPilot flyout with monitor brightness, audio device controls, live network activity, and quick Windows settings" fetchpriority="high">
+          <figcaption class="sr-only">TrayPilot's compact system-tray dashboard</figcaption>
+        </figure>
+        <div class="art-note note-bottom"><span class="pulse-icon" aria-hidden="true">↗</span><span><b>Stay in your flow</b><small>Open with a click or shortcut</small></span></div>
+        <span class="spark spark-a" aria-hidden="true">✳</span><span class="spark spark-b" aria-hidden="true">✳</span>
+      </div>
+      <a class="scroll-cue" href="#features"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="intro-band" aria-label="The TrayPilot idea">
+      <p>Less hunting through menus.<br><span>More getting on with it.</span></p>
+      <div class="intro-detail"><span class="line-mark" aria-hidden="true"></span><p>Small, repeatable Windows tasks shouldn’t send you opening a maze of settings. TrayPilot gathers useful controls in one lightweight flyout, close to where you already work.</p></div>
+    </section>
+
+    <section class="features section-wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">A little dashboard, a lot less friction</p>
+        <h2 id="features-title">The controls you came for.<br><span>Without the detour.</span></h2>
+        <p>Open TrayPilot from the notification area or use your keyboard shortcut. Your current task stays right where you left it.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-display">
+          <div class="feature-top"><span class="feature-number">01 / DISPLAY</span><span class="feature-icon" aria-hidden="true">☼</span></div>
+          <h3>Make the picture yours</h3>
+          <p>Adjust supported monitor brightness and cycle available refresh rates. Monitor discovery keeps connected displays in view.</p>
+          <span class="card-footnote">DDC/CI and device support vary</span>
+          <div class="mini-display" aria-hidden="true"><span>Display</span><i></i><div class="slider"><b></b></div><small>Brightness <strong>43%</strong></small></div>
+        </article>
+        <article class="feature-card feature-audio">
+          <div class="feature-top"><span class="feature-number">02 / AUDIO</span><span class="feature-icon" aria-hidden="true">◖))</span></div>
+          <h3>Switch without the search</h3>
+          <p>Pick a playback device and reach speaker or microphone mute controls from the same compact place.</p>
+          <span class="card-footnote">Local Windows audio endpoints</span>
+          <div class="mini-audio" aria-hidden="true"><span class="audio-symbol">◖))</span><span>Speakers <small>Creative Pebble Pro</small></span><b>⌄</b></div>
+        </article>
+        <article class="feature-card feature-network">
+          <div class="feature-top"><span class="feature-number">03 / NETWORK</span><span class="feature-icon" aria-hidden="true">⌁</span></div>
+          <h3>See the signal</h3>
+          <p>Check aggregate download and upload throughput at a glance, read from local network adapter counters.</p>
+          <span class="card-footnote">No packet inspection</span>
+          <div class="mini-network" aria-hidden="true"><span>↓ <b>8.42</b> Mbps</span><span>↑ <b>1.16</b> Mbps</span><svg viewBox="0 0 280 56" role="presentation"><path d="M2 42 C24 40 28 14 50 23 S79 49 99 35 124 19 143 31 168 11 188 22 214 42 233 27 258 34 278 8"/></svg></div>
+        </article>
+        <article class="feature-card feature-quick">
+          <div class="feature-top"><span class="feature-number">04 / QUICK SETTINGS</span><span class="feature-icon" aria-hidden="true">✦</span></div>
+          <h3>Little switches, close by</h3>
+          <p>Reach theme, Night Light, power mode, desktop icons, and PC lock actions from your tray flyout.</p>
+          <span class="card-footnote">Uses the Windows settings available on your PC</span>
+          <div class="mini-quick" aria-hidden="true"><span>◐<small>Theme</small></span><span>☾<small>Night Light</small></span><span>▱<small>Desktop</small></span><span>⌑<small>Lock</small></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shortcut-section" id="how-it-works" aria-labelledby="shortcut-title">
+      <div class="shortcut-inner section-wrap">
+        <div class="shortcut-copy">
+          <p class="eyebrow">A shortcut back to your flow</p>
+          <h2 id="shortcut-title">Here when you need it.<br><span>Out of the way when you don’t.</span></h2>
+          <p>Click the tray icon or bring TrayPilot forward with a configurable global keyboard shortcut. Choose a supported combination that suits your setup; changes are saved locally.</p>
+          <div class="key-combo" aria-label="Default keyboard shortcut: Control plus Alt plus Space"><kbd>Ctrl</kbd><b>+</b><kbd>Alt</kbd><b>+</b><kbd>Space</kbd><span>Default shortcut</span></div>
+          <a class="text-link" href="help.html#keyboard-shortcut">Read shortcut setup details <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="shortcut-shot">
+          <img src="assets/screenshot-shortcut.png" width="350" height="652" alt="TrayPilot keyboard shortcut editor expanded below the dashboard, with modifier and key selectors and a Save shortcut button" loading="lazy">
+          <figcaption>Choose and save your preferred shortcut</figcaption>
+        </figure>
+        <div class="shortcut-stamp" aria-hidden="true"><span>YOUR PC</span><b>YOUR<br>RHYTHM</b><i>✳</i></div>
+      </div>
+    </section>
+
+    <section class="privacy-section section-wrap" aria-labelledby="privacy-title">
+      <div class="privacy-orbit" aria-hidden="true">⌂</div>
+      <div class="privacy-content">
+        <p class="eyebrow">A local-first Windows utility</p>
+        <h2 id="privacy-title">Your controls stay<br><span>on your PC.</span></h2>
+        <p>No TrayPilot account. No cloud dashboard. No telemetry. TrayPilot reads local device information needed for its controls, and keeps settings and diagnostic logs on your device.</p>
+        <a class="text-link" href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Read the privacy policy <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="privacy-points">
+        <div><span aria-hidden="true">01</span><b>No account or sign-in</b></div>
+        <div><span aria-hidden="true">02</span><b>No analytics or telemetry</b></div>
+        <div><span aria-hidden="true">03</span><b>Settings stay on your PC</b></div>
+        <small>Network monitoring reads adapter counters; it does not inspect packet contents.</small>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-inner section-wrap">
+        <div class="faq-heading"><p class="eyebrow">Good questions</p><h2 id="faq-title">Before you<br><span>take the wheel.</span></h2><p>Quick, plain answers about TrayPilot's features, requirements, and privacy.</p></div>
+        <div class="faq-list">
+          <details><summary>What is TrayPilot for Windows?</summary><p>TrayPilot is a Windows 11 system tray dashboard that brings supported monitor brightness controls, audio device switching and mute controls, live network adapter throughput, and selected Windows quick settings into one compact flyout.</p></details>
+          <details><summary>Does TrayPilot work on Windows 10?</summary><p>No. TrayPilot targets Windows 11 version 22H2 (build 22621) or later.</p></details>
+          <details><summary>Does TrayPilot collect data or need an account?</summary><p>No account is required, and TrayPilot has no telemetry or cloud service. It reads local system information for its controls; settings and diagnostic logs stay on your device. See the <a href="https://nikatsam.github.io/app-privacy-policies/traypilot.html">full privacy policy</a>.</p></details>
+          <details><summary>Can TrayPilot control any monitor's brightness?</summary><p>External monitor brightness depends on DDC/CI support across the monitor, connection, adapter, and graphics driver. Some supported laptop panels can use a Windows brightness fallback. Hardware support varies.</p></details>
+          <details><summary>Does TrayPilot inspect my internet traffic?</summary><p>No. It reads local network adapter byte counters to estimate aggregate download and upload throughput. It does not inspect packet contents.</p></details>
+          <details><summary>Can it route audio per app or switch HDR?</summary><p>Per-application audio routing and changing HDR state are not included. TrayPilot can switch audio endpoints, control speaker and microphone mute, and show HDR capability and state as read-only information.</p></details>
+          <details><summary>How do I open TrayPilot?</summary><p>Launch TrayPilot and open its flyout from the system tray icon, or press its global keyboard shortcut. The default shortcut is Ctrl + Alt + Space; supported combinations can be changed in the flyout.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-wrap" aria-labelledby="cta-title">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <p class="eyebrow">Find your way back to flow</p>
+      <h2 id="cta-title">Windows, a little more<br><span>within reach.</span></h2>
+      <p>Explore TrayPilot on the Microsoft Store.</p>
+      <a class="button button-primary" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">View TrayPilot in Store <span aria-hidden="true">↗</span></a>
+      <small>For Windows 11. Feature support depends on your device.</small>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#top"><img src="assets/store-logo.png" width="32" height="32" alt=""><span>TrayPilot</span></a>
+    <p>A focused tray dashboard for Windows 11.</p>
+    <nav aria-label="Footer navigation">
+      <a href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+      <a href="help.html">Help</a>
+      <a href="#faq">FAQs</a>
+      <a href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Microsoft Store</a>
+    </nav>
+    <small>© <span id="year">2026</span> TrayPilot</small>
+  </footer>
+</body>
+</html>

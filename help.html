@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <meta name="description" content="TrayPilot quick start and help: open the Windows 11 flyout, set its keyboard shortcut, and understand display, audio, and network feature support.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nikatsam.github.io/WIN_APP_TrayPilot_Website/help.html">
+  <link rel="icon" href="assets/store-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>TrayPilot Help and Quick Start</title>
+</head>
+<body class="help-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="TrayPilot home">
+      <img src="assets/store-logo.png" width="40" height="40" alt="">
+      <span>TrayPilot</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="./#features">Features</a>
+      <a href="./#faq">FAQ</a>
+    </nav>
+    <a class="button button-small button-outline" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Microsoft Store <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main" class="help-main section-wrap">
+    <a class="help-back" href="./">← Back to TrayPilot</a>
+    <p class="eyebrow">Quick start / Help</p>
+    <h1>Get set up.<br><span>Get back to it.</span></h1>
+    <p class="help-intro">TrayPilot is a Windows 11 system-tray dashboard. Use this guide to open the flyout, configure its shortcut, and understand when a control depends on your hardware.</p>
+
+    <section class="help-block" id="open-traypilot" aria-labelledby="open-title">
+      <p class="help-number">01 / OPEN</p>
+      <h2 id="open-title">Open the tray dashboard</h2>
+      <p>Launch TrayPilot. It stays in the Windows notification area rather than opening a traditional main window. Click its tray icon to open the flyout, or use the global keyboard shortcut.</p>
+      <p>The default shortcut is <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>. Clicking outside the flyout dismisses it; using the shortcut brings it forward without toggling it closed.</p>
+    </section>
+
+    <section class="help-block" id="keyboard-shortcut" aria-labelledby="shortcut-title">
+      <p class="help-number">02 / SHORTCUT</p>
+      <h2 id="shortcut-title">Change the keyboard shortcut</h2>
+      <ol>
+        <li>Open the flyout from the tray icon.</li>
+        <li>Select <strong>Keyboard shortcut</strong> at the bottom to expand its editor.</li>
+        <li>Choose Ctrl + Alt, Ctrl + Shift, or Alt + Shift, then choose Space, A-Z, or F1-F11.</li>
+        <li>Select <strong>Save shortcut</strong>. The saved combination takes effect immediately.</li>
+      </ol>
+      <p>To disable the global shortcut, switch off <strong>Show TrayPilot from anywhere</strong> and save. If a combination is unavailable, TrayPilot keeps the previous active shortcut and reports the conflict. Settings are stored locally under <code>%LOCALAPPDATA%\TrayPilot</code>.</p>
+    </section>
+
+    <section class="help-block" id="display-support" aria-labelledby="display-title">
+      <p class="help-number">03 / DISPLAY</p>
+      <h2 id="display-title">Display and brightness support</h2>
+      <p>External monitor brightness depends on DDC/CI support from the display, connection, adapter, and graphics driver. Some supported laptop panels can use a Windows brightness fallback. Refresh rates shown depend on the display modes available to Windows.</p>
+      <p>HDR capability and state are informational in this release; TrayPilot does not switch HDR on or off.</p>
+    </section>
+
+    <section class="help-block" id="audio-network-support" aria-labelledby="audio-title">
+      <p class="help-number">04 / AUDIO &amp; NETWORK</p>
+      <h2 id="audio-title">Audio and network controls</h2>
+      <p>Audio controls use the Windows playback endpoints available on your PC. TrayPilot can switch playback devices and control speaker or microphone mute; per-application audio routing is not included.</p>
+      <p>Network activity is estimated from local adapter byte counters. It shows aggregate download and upload throughput, not individual app usage, and does not inspect packet contents.</p>
+    </section>
+
+    <section class="help-block help-requirements" id="requirements" aria-labelledby="requirements-title">
+      <p class="help-number">05 / REQUIREMENTS</p>
+      <h2 id="requirements-title">Windows version and privacy</h2>
+      <p>TrayPilot targets Windows 11 version 22H2 (build 22621) or later. Windows 10 is not supported. No account is required; the app has no telemetry or cloud service. Settings and diagnostic logs remain on your PC.</p>
+      <a class="text-link" href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Read the privacy policy <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <div class="help-cta">
+      <p>Ready to see TrayPilot?</p>
+      <a class="button button-primary" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">View in Microsoft Store <span aria-hidden="true">↗</span></a>
+      <small>Store listing availability may depend on certification and your region.</small>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="./"><img src="assets/store-logo.png" width="32" height="32" alt=""><span>TrayPilot</span></a>
+    <p>A focused tray dashboard for Windows 11.</p>
+    <nav aria-label="Footer navigation">
+      <a href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+      <a href="./#faq">FAQs</a>
+      <a href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Microsoft Store</a>
+    </nav>
+    <small>© <span id="year">2026</span> TrayPilot</small>
+  </footer>
+  <script src="site.js" defer></script>
+</body>
+</html>

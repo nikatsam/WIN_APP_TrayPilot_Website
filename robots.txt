@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikatsam.github.io/WIN_APP_TrayPilot_Website/sitemap.xml
