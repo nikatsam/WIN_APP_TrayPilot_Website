@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f1">
+  <meta name="description" content="A practical TrayPilot quick guide: open the Windows 11 tray flyout, configure its shortcut, and understand display, audio, network, and privacy details.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://traypilot-light-site.pages.dev/guide.html">
+  <link rel="icon" href="assets/store-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>TrayPilot Quick Guide | Start Here or Tune Your Setup</title>
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#main">Skip to the guide</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="TrayPilot home"><img src="assets/store-logo.png" alt="" width="38" height="38"><span>TrayPilot<span class="brand-period">.</span></span></a>
+    <nav aria-label="Main navigation"><a href="./#toolkit">What it does</a><a href="./#questions">Questions</a></nav>
+    <a class="header-cta" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">See it in Store <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" class="guide-main wrap">
+    <a class="guide-back" href="./">← Back to TrayPilot</a>
+    <p class="kicker">The quick, practical version</p>
+    <h1>A few controls.<br><span>A smoother routine.</span></h1>
+    <p class="guide-lede">TrayPilot lives in the Windows notification area. Start with the tray icon; if you like keyboard shortcuts, make that your front door instead.</p>
+
+    <section class="guide-block" id="first-steps" aria-labelledby="first-title">
+      <p class="guide-index">01 / FIRST STEPS</p>
+      <h2 id="first-title">Just want to use it?</h2>
+      <ol>
+        <li>Install and launch TrayPilot from its Microsoft Store listing.</li>
+        <li>Find its icon in the notification area near the Windows clock. Select it to open the flyout.</li>
+        <li>Choose the control you need: display, audio, network, or one of the quick Windows actions.</li>
+        <li>Click outside the flyout to dismiss it when you’re done.</li>
+      </ol>
+      <p>No account or setup wizard is required. If Windows has tucked the icon away, open the notification-area overflow to find it.</p>
+    </section>
+
+    <section class="guide-block" id="keyboard-shortcut" aria-labelledby="keys-title">
+      <p class="guide-index">02 / MAKE IT YOURS</p>
+      <h2 id="keys-title">Set a keyboard shortcut</h2>
+      <p>The default global shortcut is <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>. To change it:</p>
+      <ol>
+        <li>Open TrayPilot and select <strong>Keyboard shortcut</strong> at the bottom of its flyout.</li>
+        <li>Choose Ctrl + Alt, Ctrl + Shift, or Alt + Shift, then a letter A-Z, Space, or F1-F11.</li>
+        <li>Select <strong>Save shortcut</strong> to apply the new combination immediately.</li>
+      </ol>
+      <p>Unsupported or already-reserved combinations are rejected, and the previous shortcut remains active. Turn off <strong>Show TrayPilot from anywhere</strong> and save to disable the global shortcut while keeping the tray icon available.</p>
+    </section>
+
+    <section class="guide-block" id="power-user-notes" aria-labelledby="tuning-title">
+      <p class="guide-index">03 / DESK TUNER NOTES</p>
+      <h2 id="tuning-title">More about the controls</h2>
+      <div class="guide-facts">
+        <article><h3>Multiple monitors</h3><p>TrayPilot discovers connected displays. Brightness over DDC/CI depends on the monitor, cable or dock, GPU, and driver. Some laptop panels support a Windows brightness fallback.</p></article>
+        <article><h3>Refresh rate and HDR</h3><p>Available refresh rates come from the modes Windows reports. HDR capability and state are informational only; HDR switching isn’t provided.</p></article>
+        <article><h3>Audio endpoints</h3><p>Select a playback endpoint and control speaker or microphone mute. TrayPilot does not route individual apps to different devices.</p></article>
+        <article><h3>Network activity</h3><p>Download and upload estimates use local adapter byte counters. They are aggregate speeds, not packet inspection or per-application usage.</p></article>
+      </div>
+    </section>
+
+    <section class="guide-block" id="privacy-and-requirements" aria-labelledby="privacy-title">
+      <p class="guide-index">04 / BEFORE YOU INSTALL</p>
+      <h2 id="privacy-title">Requirements and privacy</h2>
+      <p>TrayPilot supports Windows 11 version 22H2 (build 22621) or later. It does not support Windows 10. Hardware-dependent controls may be unavailable on some PCs without affecting the other controls.</p>
+      <p>TrayPilot requires no sign-in and has no cloud service or telemetry. It reads local system details needed for its controls; settings and diagnostics remain on the PC.</p>
+      <a class="guide-inline" href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Read the full privacy policy <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <div class="guide-callout">
+      <p>Ready to get the useful bits closer?</p>
+      <a class="pill-button button-ink" href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Open TrayPilot in Store <span aria-hidden="true">↗</span></a>
+      <small>Listing availability may depend on certification and your region.</small>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="./"><img src="assets/store-logo.png" alt="" width="34" height="34"><span>TrayPilot<span class="brand-period">.</span></span></a>
+    <p>Fewer menus between you and your day.</p>
+    <nav aria-label="Footer navigation"><a href="./#questions">FAQs</a><a href="https://nikatsam.github.io/app-privacy-policies/traypilot.html" target="_blank" rel="noopener noreferrer">Privacy</a><a href="https://apps.microsoft.com/detail/9N4VVRMPPK6W?hl=en-us&amp;gl=US" target="_blank" rel="noopener noreferrer">Microsoft Store</a></nav>
+    <small>© <span id="year">2026</span> TrayPilot</small>
+  </footer>
+  <script src="site.js" defer></script>
+</body>
+</html>

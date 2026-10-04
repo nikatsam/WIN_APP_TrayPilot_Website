@@ -2,6 +2,8 @@
 
 Static, dependency-free promotional site for the TrayPilot Windows 11 app. The public repository is [nikatsam/WIN_APP_TrayPilot_Website](https://github.com/nikatsam/WIN_APP_TrayPilot_Website); the live site is [nikatsam.github.io/WIN_APP_TrayPilot_Website](https://nikatsam.github.io/WIN_APP_TrayPilot_Website/).
 
+An alternate light-theme presentation and beginner/power-user guide are deployed separately at [traypilot-light-site.pages.dev](https://traypilot-light-site.pages.dev/). Its source and Cloudflare deployment notes are in [`cloudflare-site/`](cloudflare-site/README.md).
+
 ## Local preview
 
 Open `index.html` directly in a browser, or serve this directory with any static file server. No build step, package installation, cookies, analytics, or runtime API is required. Google Fonts are an optional external font request; system font fallbacks are included.
